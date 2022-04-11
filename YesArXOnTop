@@ -1,12 +1,13 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("ArX ", "Ocean")
 
-game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Loaded", Text = "Arvin#0530."})
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Loaded", Text = "Made By Arvin#0530."})
 
 local Tab1 = Window:NewTab("Main")
 local Tab2 = Window:NewTab("Animations")
 local Tab3 = Window:NewTab("HeadLess/Korblox")
 local Tab4 = Window:NewTab("Ohter")
+local Tab5 = Window:NewTab("Disocrd")
 
 local Tab1Section = Tab1:NewSection("Main")
 Tab1Section:NewButton("AimLock Q", "Noting", function()
@@ -256,8 +257,8 @@ Tab2Section:NewButton("Animations", "Noting", function()
         end
             
 end)
-local Tab3Section = Tab3:NewSection("Korblox/HeadLess")
-Tab3Section:NewButton("HeadLess/Korblox", "Noting", function()
+local Tab3Section = Tab3:NewSection("HeadLess/Korblox")
+Tab3Section:NewButton("HeadLess", "Noting", function()
     game.Players.LocalPlayer.Character.Head.Transparency = 1
     game.Players.LocalPlayer.Character.Head.Transparency = 1
     for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
@@ -265,7 +266,9 @@ Tab3Section:NewButton("HeadLess/Korblox", "Noting", function()
     v.Transparency = 1
     end
     end
-    
+end)
+
+Tab3Section:NewButton("Korblox", "Noting", function()
     local ply = game.Players.LocalPlayer
     local chr = ply.Character
     chr.RightLowerLeg.MeshId = "902942093"
@@ -275,6 +278,7 @@ Tab3Section:NewButton("HeadLess/Korblox", "Noting", function()
     chr.RightFoot.MeshId = "902942089"
     chr.RightFoot.Transparency = "1"
 end)
+
 
 local Tab4Section = Tab4:NewSection("Ohter")
 Tab4Section:NewButton("Rejoin", "WTF You Want?", function()
@@ -338,3 +342,8 @@ for i,v in pairs(game:GetService("Workspace").Ignored.Shop:GetChildren()) do
         end
     end)
 end
+
+local Tab5Section = Tab5:NewSection("Disocrd")
+Tab5Section:NewButton("Discord", "Paste It On You'r", function()
+    setclipboard("https://discord.gg/tvDgsZUT") 
+end)
