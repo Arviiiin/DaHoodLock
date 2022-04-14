@@ -342,8 +342,3 @@ for i,v in pairs(game:GetService("Workspace").Ignored.Shop:GetChildren()) do
         end
     end)
 end
-
-local Tab5Section = Tab5:NewSection("Disocrd")
-Tab5Section:NewButton("Discord", "Paste It On You'r", function()
-    setclipboard("https://discord.gg/tvDgsZUT") 
-end)
