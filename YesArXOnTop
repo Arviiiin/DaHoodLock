@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("ArX ", "Ocean")
+local Window = Library.CreateLib("ArX ", "BloodTheme")
 
 game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Loaded", Text = "Made By Arvin#0530."})
 
